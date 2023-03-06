@@ -1,0 +1,168 @@
+/*~~~~~~~~~~~~~FONTS, STUFF~~~~~~~~~~~~~~ */
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+:root {
+    --font_title1:'Bellefair', serif;
+    --font_title2:'Barlow Condensed', sans-serif; 
+    --font_text:'Barlow', sans-serif; }
+
+
+::-webkit-scrollbar {
+        width: 24px; /* ширина для вертикального скролла */
+        height: 8px; /* высота для горизонтального скролла */
+        background-color: #143861;
+    }
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, textarea, select, a, button, div {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    background-color: black;
+}
+
+ /* ~~~~~~~~~~~~~~~CONTENT-WRAPPER~~~~~~~~~~~~~~ */
+ .content {
+    margin: 7vh auto;
+    max-width: 1110px;
+    display: flex;
+    justify-content:space-between;
+    height: 53vh;
+}
+
+.wrapper {
+    padding: 0 3vw 0 3vw;
+    margin: 7.5vh auto;
+}
+
+ /* ~~~~~~~~~~~HEADINGS~~~~~~~~~~~~~ */
+ .heading_1 {
+    color: #FFFFFF;
+    font-size: 150px;
+    margin: 24px 0;
+    font-family: var(--font_title1);
+    font-weight: 400;
+}
+
+.heading_2 {
+    color: #FFFFFF;
+    font-size: 100px;
+    font-family: var(--font_title1);
+}
+
+.heading_3 {
+    font-family: var(--font_title1);
+    color: white;
+    font-size: 56px;
+    line-height: 64px;
+    text-transform: uppercase;
+}
+
+.heading_4 {
+    font-family: var(--font_title1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.heading_5 { /*SO YOU WANT TO TRAVEL... */
+    color: #D0D6F9;
+    font-family: var(--font_title2);
+    font-size: 28px;
+    letter-spacing: 4.75px;
+}
+.heading_5 strong { 
+    opacity: 0.25;
+}
+.heading_5_cards {/* PICK YOUR DESTINATION */
+    max-width: 1110px;
+    margin:  0 auto;
+    text-align: left;
+}
+
+@media (min-width: 521px) and (max-width: 820px) {
+    .heading_1 {
+        height: 150px;
+    }
+    .heading_2 {
+        font-size: 80px; 
+    }
+    .heading_3 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .heading_4 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .heading_5 {
+        font-size: 20px;
+        line-height: 24px; 
+        letter-spacing: 3.375px;
+    }
+    .heading_5_cards {
+        margin: 40px 0 0 2vw;
+    }
+    .content {
+        flex-direction: column;
+        margin: 0 auto 0;
+    }
+    .wrapper {
+        margin: 4vh 0 0 0;
+    }
+}
+
+@media (max-width: 520px) {
+    .content {
+        flex-direction: column;
+        margin: 0 auto 0;
+        height: auto;
+    }
+    .heading_1 {
+        font-size: 80px;
+        height: 100px;
+        margin: 2vh auto 0;
+    }
+    .heading_2 {
+        font-size: 56px; 
+    }
+    .heading_3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .heading_4 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .heading_5 {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+    .heading_5_cards {
+        margin: 3.5vh auto 0;
+        text-align: center;
+    }
+    .wrapper {
+        margin: 0 0 0 0;
+    }
+}
+
+@media (min-width: 1600px) {
+    .heading_5_cards {
+        margin:  0 0 0 11.5vw;
+    }
+    .content {
+        max-width: 70vw;
+    }
+}
