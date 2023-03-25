@@ -8,7 +8,6 @@ export default function Home() {
     return () => { document.body.classList.remove('home-back') }
   }, [])
   
-  
   return (
     <main className="container main-wrapper ">
       <div className="text_box">

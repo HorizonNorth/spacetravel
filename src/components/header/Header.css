@@ -42,7 +42,8 @@ nav a:hover { box-shadow: inset 0 -4px 0 -1px #979797; }
 
 .logo {
     width: 48px;
-    height: 48px; }
+    height: 48px; 
+    cursor: pointer;}
 
 .line {
     height: 1px;

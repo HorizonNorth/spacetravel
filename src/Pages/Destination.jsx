@@ -3,6 +3,7 @@ import './stylePages/destination.css'
 import MenuDestination from '../components/MenuDestination'
 import useSwipe from '../hooks/useSwipe'
 
+
 export default function Destination({data}) {
   const [index, setIndex] = useState(0)
     
@@ -15,12 +16,14 @@ export default function Destination({data}) {
     <div className='wrapper'>
 
       <div className='heading_5 heading_5_cards' style={{color: 'white'}}>
-        <strong>01 &nbsp;</strong>PICK YOUR DESTINATION
+        <strong>01 &nbsp;</strong>PICK YOUsR DESTINATION
       </div>
           <div className='content' {... useSwipe(index, setIndex, data.length)}>
+           
             <div className='planet-image'>
-              <img src={data[index].images.png} />
+              <img src={`${data[index].images.png}`} />
             </div>         
+            
             <section className="destination-card">
               <MenuDestination data={data} index={index} setIndex={setIndex}
               className={'menu-destination'} />
@@ -39,6 +42,6 @@ export default function Destination({data}) {
             </section>
           </div>
     </div>
- 
+
 )
 }
