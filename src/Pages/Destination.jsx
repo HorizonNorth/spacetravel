@@ -3,7 +3,6 @@ import './stylePages/destination.css'
 import MenuDestination from '../components/MenuDestination'
 import useSwipe from '../hooks/useSwipe'
 
-
 export default function Destination({data}) {
   const [index, setIndex] = useState(0)
     
