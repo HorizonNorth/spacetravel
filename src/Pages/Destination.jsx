@@ -15,7 +15,7 @@ export default function Destination({data}) {
     <div className='wrapper'>
 
       <div className='heading_5 heading_5_cards' style={{color: 'white'}}>
-        <strong>01 &nbsp;</strong>PICK YOUsR DESTINATION
+        <strong>01 &nbsp;</strong>PICK YOUR DESTINATION
       </div>
           <div className='content' {... useSwipe(index, setIndex, data.length)}>
            

@@ -18,7 +18,7 @@ export default function Home() {
         because we’ll give you a truly out of this world experience!</p> 
       </div>
       <div className="main_button_container">
-        <button className="main_button">EXPLORE</button>
+        <a href="/destination"><button className="main_button">EXPLORE</button></a>
       </div>
     </main>
   )
