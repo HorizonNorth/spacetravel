@@ -23,7 +23,7 @@ export default function HeaderMobile() {
       <Burger showAside={showAside}/>
       <aside id="aside">
         <div className="aside-nav">
-          <NavLink to="/" onClick={showAside} className={({isActive}) => isActive ? 'activeMobile' : undefined }>
+          <NavLink to="/spacetravel" onClick={showAside} className={({isActive}) => isActive ? 'activeMobile' : undefined }>
             <p><b>00&nbsp;</b>&nbsp;HOME</p>
           </ NavLink>
           
