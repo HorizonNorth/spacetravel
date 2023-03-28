@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import { NavLink } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 import HeaderMobile from '../headerMobile/HeaderMobile'
 import "./Header.css"
 
@@ -20,7 +21,7 @@ export default function Header() {
     <>
     {(width > 520) ? (
       <header className="header">
-       <div className="logo"><a href="/"><img src="./logo.svg" alt="logo" /></a></div>
+       <div className="logo"><Link to="/">Your link text<img src="./logo.svg" alt="logo" /></Link></div>
         <hr className="line" />
         <nav>
             <NavLink to="/" className={({isActive}) => isActive ? 'activeStyle' : undefined }>
