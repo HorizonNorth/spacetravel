@@ -21,7 +21,7 @@ export default function Header() {
     <>
     {(width > 520) ? (
       <header className="header">
-       <div className="logo"><Link to="/">Your link text<img src="./logo.svg" alt="logo" /></Link></div>
+       <div className="logo"><HashLink to="/"><img src="./logo.svg" alt="logo" /></HashLink></div>
         <hr className="line" />
         <nav>
             <NavLink to="/" className={({isActive}) => isActive ? 'activeStyle' : undefined }>

@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import Burger from "../burger/Burger"
 import { NavLink } from 'react-router-dom'
-
+import { HashLink } from 'react-router-hash-link';
 
 export default function HeaderMobile() {
     const [openAside, setOpenAside] = useState(true);
@@ -20,7 +20,7 @@ export default function HeaderMobile() {
 
   return (
     <header className="header-mobile" onClick={event => event.stopPropagation()}>
-      <div className="logo"><a href="/"><img src="./logo.svg" alt="logo"></img></a></div>
+      <div className="logo"><HashLink to="/"><img src="./logo.svg" alt="logo"></img></HashLink></div>
       <Burger showAside={showAside}/>
       <aside id="aside">
         <div className="aside-nav">

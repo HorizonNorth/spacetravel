@@ -1,5 +1,6 @@
 import {useEffect} from 'react'
 import './stylePages/home.css'
+import { HashLink } from 'react-router-hash-link';
 
 export default function Home() {
 
@@ -18,7 +19,7 @@ export default function Home() {
         because we’ll give you a truly out of this world experience!</p> 
       </div>
       <div className="main_button_container">
-        <a href="/destination"><button className="main_button">EXPLORE</button></a>
+      <HashLink to="/destination"><button className="main_button">EXPLORE</button></HashLink>
       </div>
     </main>
   )
