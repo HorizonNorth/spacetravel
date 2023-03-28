@@ -19,7 +19,7 @@ export default function HeaderMobile() {
 
   return (
     <header className="header-mobile" onClick={event => event.stopPropagation()}>
-      <div className="logo"><a href="/"><img src="/logo.svg" alt="logo"></img></a></div>
+      <div className="logo"><a href="/"><img src="./logo.svg" alt="logo"></img></a></div>
       <Burger showAside={showAside}/>
       <aside id="aside">
         <div className="aside-nav">
