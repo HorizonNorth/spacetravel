@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/header/Header'
 import Home from './Pages/Home'
 import Destination from './Pages/Destination'
@@ -10,17 +10,17 @@ import * as data from './data.json'
 function App() {
 
   return (
-  <BrowserRouter>
+  <HashRouter history={history}>
     <Header />
 
     <Routes>
-      <Route exact path="/" element={<Home />} />
-      <Route exact path="/destination" element={<Destination data={data.destinations} />}/>
-      <Route exact path="/crew" element={<Crew data={data.crew}/>}/>
-      <Route exact path="/technology" element={<Technology data={data.technology} />}/>
+      <Route path="/" element={<Home />} />
+      <Route path="/destination" element={<Destination data={data.destinations} />}/>
+      <Route path="/crew" element={<Crew data={data.crew}/>}/>
+      <Route path="/technology" element={<Technology data={data.technology} />}/>
     </Routes>
 
-  </BrowserRouter>
+  </HashRouter>
   )
 }
 
