@@ -4,7 +4,7 @@ import Burger from "../burger/Burger"
 import { NavLink } from 'react-router-dom'
 
 export default function HeaderMobile() {
-    const [openAside, setOpenAside] = useState(false);
+    const [openAside, setOpenAside] = useState(true);
 
     function showAside() {
         setOpenAside(!openAside)
@@ -23,7 +23,7 @@ export default function HeaderMobile() {
       <Burger showAside={showAside}/>
       <aside id="aside">
         <div className="aside-nav">
-          <NavLink to="/spacetravel" onClick={showAside} className={({isActive}) => isActive ? 'activeMobile' : undefined }>
+          <NavLink to="/" onClick={showAside} className={({isActive}) => isActive ? 'activeMobile' : undefined }>
             <p><b>00&nbsp;</b>&nbsp;HOME</p>
           </ NavLink>
           
