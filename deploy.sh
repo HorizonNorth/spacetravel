@@ -1,4 +1,4 @@
 git status
 git add .
-git commit -m 'deploy'
+git commit -m 'bugfix'
 git push origin main

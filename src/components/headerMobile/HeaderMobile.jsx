@@ -5,17 +5,22 @@ import { NavLink } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 
 export default function HeaderMobile() {
-    const [openAside, setOpenAside] = useState(true);
+    const [openAside, setOpenAside] = useState(false);
 
     function showAside() {
         setOpenAside(!openAside)
     }
 
     useEffect(() => {
-        document.getElementById('aside').classList.toggle('aside-show')
-        document.getElementById('nav-icon1').classList.toggle('open')
-        if (openAside) window.addEventListener('click', showAside)
-        else window.removeEventListener('click', showAside)
+        if (openAside) {
+          document.getElementById('aside').classList.add('aside-show')
+          document.getElementById('nav-icon1').classList.add('open')
+          window.addEventListener('click', showAside)
+        } else {
+          document.getElementById('aside').classList.remove('aside-show')
+          document.getElementById('nav-icon1').classList.remove('open')
+          window.removeEventListener('click', showAside)
+        }
     }, [openAside])
 
   return (
